@@ -17,93 +17,29 @@
       <p class="h2" style="text-transform: capitalize">idarə etmə paneli</p>
       <div class="mb-3">
         <label for="headerInput" class="form-label">Başlıq</label>
-        <input type="text" id="headerInput" class="form-control" />
+        <input type="text" id="headerInput" class="form-control" value="" />
       </div>
       <div class="mb-3">
-        <label for="exampleTextarea" class="form-label"> Mətn </label>
-        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+        <label for="DescriptionInput" class="form-label"> Mətn </label>
+        <textarea
+          class="form-control"
+          id="DescriptionInput"
+          rows="3"
+        ></textarea>
       </div>
       <div class="mb-3">
         <label for="imageInput" class="form-label">Şəkil</label>
-        <input type="file" id="imageInput" class="form-control" />
+        <input type="file" id="imageInput" class="form-control" multiple />
+      </div>
+      <div class="mb-3">
+        <label for="dateİnput" class="form-label">tarix</label>
+        <input type="date" id="dateİnput" class="form-control" />
       </div>
 
-      <form action="">
-        <input 
-          type="checkbox"
-          id="category"
-          name="option1"
-          value="yeniliklər"
-        />
-        <label for="option1">yeniliklər</label> <br />
-
-        <input type="checkbox" id="category" name="option2" value="əlaqələr" />
-        <label for="option2">əlaqələr</label> <br />
-
-        <input
-          type="checkbox"
-          id="category"
-          name="option3"
-          value="uğurlarımız"
-        />
-        <label for="option3">uğurlarımız</label> <br /><br />
-      </form>
       <button type="button" class="btn btn-primary" id="submitButton">
         Gönder
       </button>
     </section>
-
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
-      import {
-        getDatabase,
-        ref,
-        push,
-      } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-database.js";
-
-      // Your web app's Firebase configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyA-Yp3wSroAJCLdLujgtt6164UfQSM5UB8",
-        authDomain: "elchinadau.firebaseapp.com",
-        databaseURL: "https://elchinadau-default-rtdb.firebaseio.com",
-        projectId: "elchinadau",
-        storageBucket: "elchinadau.appspot.com",
-        messagingSenderId: "165668708462",
-        appId: "1:165668708462:web:69bb90b74ee1a368efc67f",
-      };
-
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const db = getDatabase(app);
-
-      // Global variable to store form data
-      let formData = {};
-
-      document
-        .getElementById("submitButton")
-        .addEventListener("click", function () {
-          const header = document.getElementById("headerInput").value;
-          const textarea = document.getElementById("exampleTextarea").value;
-          const imageFile = document.getElementById("imageInput").files[0];
-
-          formData = {
-            title: header,
-            description: textarea,
-            image: imageFile ? imageFile.name : null,
-          };
-
-          console.log(formData);
-
-          // Push form data to Firebase Realtime Database
-          push(ref(db, "news"), formData)
-            .then(() => {
-              console.log("Data saved successfully!");
-            })
-            .catch((error) => {
-              console.error("Error saving data:", error);
-            });
-        });
-    </script>
+    <script src="./admin.js"></script>
   </body>
 </html>
