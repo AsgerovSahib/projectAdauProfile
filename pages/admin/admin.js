@@ -35,8 +35,23 @@ submitButton.addEventListener("click", async function () {
         }
       );
       console.log(response);
+      if (response.status == 201 || response.status == 200) {
+        myFunction();
+        document.querySelector("#headerInput").value = "";
+        document.querySelector("#DescriptionInput").value = "";
+        document.querySelector("#dateInput").value = "";
+        document.querySelector("#imageInput").value = "";
+      }
     } catch (error) {
       console.error("There was an error!", error);
     }
   }
 });
+
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function () {
+    x.className = x.className.replace("show", "");
+  }, 6000);
+}
