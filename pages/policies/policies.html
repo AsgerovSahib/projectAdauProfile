@@ -15,15 +15,25 @@
   <body>
     <!--* header start  -->
     <header>
-      <div
-        style="
-          width: 100%;
-          height: 150px;
-          background-color: rgba(108, 180, 0, 0.701);
-        "
-        class="cmain"
-      ></div>
-      <hr />
+      <div id="mainHeader" class="cmain">
+        <div id="headerBox1">
+          <a target="_blank" href="https://adau.edu.az/">adau.edu.az</a>
+        </div>
+        <div id="headerBox2">
+          <a href="./index.html">
+            <img src="../../adau_logo_White.png" alt="adau_logo_White.png" />
+          </a>
+          <img
+            src="../../adau_header_words.png"
+            class="mobile-hide"
+            alt="adau_header_words.png"
+          />
+        </div>
+      </div>
+      <div class="cmain">
+        <hr />
+      </div>
+      <!--* naw  -->
       <nav class="cmain">
         <ul>
           <li class="" style="background-color: #f0f0f0">
@@ -31,65 +41,45 @@
               >Home</a
             >
           </li>
-          <li class="" style="background-color: #487f94">
+          <li class="active">
             <a
-              href="./policies.html"
+              href="./pages/policies/policies.html"
               target=""
-              style="color: #ffffff !important"
+              style="color: white"
               >Policies</a
             >
           </li>
           <li class="" style="background-color: #f0f0f0">
-            <a href="sdg-reports" target="" style="color: #555 !important"
-              >Reports</a
-            >
+            <a href="#" target="" style="color: #555 !important">Reports</a>
           </li>
           <li class="" style="background-color: #f0f0f0">
-            <a
-              href="climate-action-plan"
-              target=""
-              style="color: #555 !important"
+            <a href="#" target="" style="color: #555 !important"
               >Climate Action Plan</a
             >
           </li>
           <li class="" style="background-color: #f0f0f0">
-            <a
-              href="student-unions-and-clubs"
-              target=""
-              style="color: #555 !important"
+            <a href="#" target="" style="color: #555 !important"
               >Student Unions and Clubs</a
             >
           </li>
           <li class="" style="background-color: #f0f0f0">
-            <a
-              href="frequently-asked-questions"
-              target=""
-              style="color: #555 !important"
-              >F.A.Q</a
-            >
+            <a href="#" target="" style="color: #555 !important">F.A.Q</a>
           </li>
           <li class="" style="background-color: #f0f0f0">
-            <a href="useful-links" target="" style="color: #555 !important"
+            <a href="#" target="" style="color: #555 !important"
               >Useful Links</a
             >
           </li>
           <li class="" style="background-color: #f0f0f0">
-            <a href="allnews" target="" style="color: #555 !important"
+            <a href="#" target="" style="color: #555 !important"
               >News and events</a
             >
           </li>
           <li class="" style="background-color: #f0f0f0">
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdB4UL1ixI8JyeVnwxflONzDy7cZGrJDivjD1M6TFcIZigEcA/viewform"
-              target="_blank"
-              style="color: #555 !important"
-              >Survey</a
-            >
+            <a href="#" style="color: #555 !important">Survey</a>
           </li>
           <li class="" style="background-color: #f0f0f0">
-            <a href="contact-us" target="" style="color: #555 !important"
-              >Contact Us</a
-            >
+            <a href="#" target="" style="color: #555 !important">Contact Us</a>
           </li>
         </ul>
       </nav>
@@ -102,38 +92,106 @@
       ></div>
     </section>
     <!--* footer  -->
+
     <footer
-      style="background-color: rgba(108, 180, 0, 0.701)"
-      class="d-flex p-5 mt-3 justify-content-around gap-4 align-items-center flex-wrap"
+      class="mt-3"
+      style="background-color: rgb(89, 130, 22); padding: 20px; color: white"
     >
-      <div>
-        <ul>
-          <li>About ADAU</li>
-          <li>facultites</li>
-          <li>Institutes</li>
-          <li>Lyceum</li>
-          <li>Polyclinics</li>
-          <li>Questions</li>
-          <li>Contacts</li>
-        </ul>
-      </div>
-      <div>
-        <img src="../../style/images/ADAU-logo.png" alt="" /><br />
-        AZƏRBAYCAN DÖVLƏT <br />
-        AQRAR UNİVERSİTETİ
-      </div>
-      <div>
-        <ul>
-          <li>About ADAU</li>
-          <li>facultites</li>
-          <li>Institutes</li>
-          <li>Lyceum</li>
-          <li>Polyclinics</li>
-          <li>Questions</li>
-          <li>Contacts</li>
-        </ul>
+      <div class="cmain">
+        <div
+          style="display: flex; justify-content: space-between; flex-wrap: wrap"
+        >
+          <!-- ADAU logo and introductory text -->
+          <div style="max-width: 30%">
+            <img
+              src="../../adau_logo_White.png"
+              alt="adau_logo_White.png"
+              style="width: 150px; margin-bottom: 20px"
+            />
+            <p class="mobile-hide" style="font-size: 14px">
+              1920-ci il noyabrın 13-də Azərbaycan İnqilab Komitəsinin sədri
+              Nəriman Nərimanovun imzaladığı qərarla təsis edilmiş Bakı
+              Politeknik İnstitutunun nəzdində 5 fakültə: neft sənayesi;
+              elektrome­xanika; mühəndis-tikinti; kənd təsərrüfatı və
+              iqtisadiyyat fakültələri yaradılmışdır. Kənd təsərrüfatı
+              fakültəsinin yaradılması ilə ölkəmizdə ilk dəfə ali kənd
+              təsərrüfatı mütəxəssislərinin hazırlanmasına başlanılmışdır.
+              1924-cü ildə mütəxəssis hazırlığının birinci buraxılışı olmuşdur.
+            </p>
+          </div>
+
+          <!-- About Us section -->
+          <div class="mobile-hide" style="max-width: 20%">
+            <h3 style="font-size: 18px; margin-bottom: 10px">HAQQIMIZDA</h3>
+            <ul style="list-style-type: none; padding: 0; font-size: 14px">
+              <li>Rektorun müraciəti</li>
+              <li>Universitetin tarixi</li>
+              <li>Gəncə şəhəri</li>
+              <li>Azərbaycan Xalq Cümhuriyyəti Muzeyi</li>
+              <li>Tanıtım materialları</li>
+              <li>ISO Keyfiyyəti</li>
+              <li>Keyfiyyət siyasəti</li>
+            </ul>
+          </div>
+
+          <!-- University section -->
+          <div class="mobile-hide" style="max-width: 20%">
+            <h3 style="font-size: 18px; margin-bottom: 10px">UNİVERSİTET</h3>
+            <ul style="list-style-type: none; padding: 0; font-size: 14px">
+              <li>Xəbərlər</li>
+              <li>Elanlar</li>
+              <li>Made in ADAU</li>
+              <li>Tələbə məmnunluq sorğusu</li>
+              <li>Tədqiqat istiqamətləri</li>
+              <li>Mübadilə proqramları</li>
+              <li>Tələbə həyatı</li>
+            </ul>
+          </div>
+
+          <!-- Contact section -->
+          <div style="max-width: 20%; min-width: 300px">
+            <h3 style="font-size: 18px; margin-bottom: 10px">ƏLAQƏ</h3>
+            <div class="footer_icon" style="margin-bottom: 10px">
+              <a href="https://www.facebook.com/ADAUASAU"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/adaueduaz/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://x.com/adau1929"><i class="fa-solid fa-x"></i></a>
+              <a href="https://www.youtube.com/channel/UC0zhgiBTvxYHcWIBiCzaBrg"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a href="https://t.me/adaueduaz"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+            </div>
+            <p style="font-size: 14px">
+              Ünvan: Atatürk prospekti 450, Az2000, Gəncə, Azərbaycan
+            </p>
+            <p style="font-size: 14px">
+              E-mail:
+              <a href="mailto:info@adau.edu.az" style="color: white"
+                >info@adau.edu.az</a
+              ><br />
+              E-mail:
+              <a href="mailto:office@adau.edu.az" style="color: white"
+                >office@adau.edu.az</a
+              ><br />
+              E-mail:
+              <a href="mailto:press@adau.edu.az" style="color: white"
+                >press@adau.edu.az</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
+
+    <script
+      src="https://kit.fontawesome.com/9ed4703d7b.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
       type="text/javascript"

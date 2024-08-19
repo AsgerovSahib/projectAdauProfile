@@ -98,3 +98,16 @@ input[type="checkbox"] {
 footer ul {
   list-style: none;
 }
+
+.footer_icon a {
+  background-color: white;
+  color: rgb(107, 145, 27);
+  padding: 10px;
+  font-size: 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+.footer_icon :hover {
+  transform: scale(1.5);
+  transition: transform 0.3s ease; /* Keçidin daha yumşaq olmasını təmin edir */
+}

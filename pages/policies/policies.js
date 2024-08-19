@@ -23,9 +23,9 @@ async function renderCard() {
           <div class="card-body">
             <h5 class="card-title">${item.name}</h5>
             <p class="card-text">
-             ${item.description}
+              ${item.description.slice(0,60)}
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="#" class="btn btn-success">Daha geniş</a>
           </div>
         </div>`
     );
