@@ -30,7 +30,7 @@ async function renderCard() {
             <p class="card-text">
              ${item.description.slice(0,60)}
             </p>
-            <a href="./pages/product/product.html#id=${item.id}" class="btn btn-primary">Go somewhere</a>
+            <a href="./pages/product/product.html#id=${item.id}" class="btn btn-success">Daha geniş</a>
           </div>
         </div>`
     );

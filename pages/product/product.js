@@ -15,7 +15,7 @@ async function renderProductDetail() {
       }
     );
     console.log(response.data.data);
-    productBody.innerHTML
+    // productBody.innerHTML = `salam`;
   } catch (error) {
     console.error("There was an error!", error);
   }
