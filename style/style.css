@@ -111,3 +111,10 @@ footer ul {
   transform: scale(1.5);
   transition: transform 0.3s ease; /* Keçidin daha yumşaq olmasını təmin edir */
 }
+
+.card-img-top:hover {
+  transition: 1500ms;
+  transform: scale(0.9); /* Shrinks the image slightly */
+  object-fit: contain; /* Makes sure the whole image is visible */
+  height: auto; /* Adjusts the height */
+}

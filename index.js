@@ -24,13 +24,14 @@ async function renderCard() {
             src="${item.images[0]}"
             class="card-img-top"
             alt="..."
+              style="height: 200px; object-fit: cover;"
           />
           <div class="card-body">
             <h5 class="card-title">${item.name}</h5>
             <p class="card-text">
              ${item.description.slice(0,60)}
             </p>
-            <a href="./pages/product/product.html#id=${item.id}" class="btn btn-success">Daha geniş</a>
+            <a href="./pages/product/product.html#id=${item.id}" class="btn btn-success">More</a>
           </div>
         </div>`
     );
