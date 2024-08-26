@@ -4,6 +4,10 @@ const productBody = document.querySelector("#productBody");
 const productTitle = document.querySelector("#productTitle");
 const productDescription = document.querySelector("#productDescription");
 const productImages = document.querySelector("#productImages");
+const productlink = document.querySelector("#productlink");
+const productData = document.querySelector("#productData");
+
+console.log("productlink", productlink);
 
 let id = window.location.hash.slice(4, ItemId.length);
 
@@ -18,12 +22,21 @@ async function renderProductDetail() {
         },
       }
     );
-    console.log(response.data.data);
+    // console.log(response.data.data);
 
     // Set title and description
     productTitle.innerHTML = response.data.data.name;
     productDescription.innerHTML = response.data.data.description;
+    productlink.href = response.data.data.link;
 
+    const date = new Date(response.data.data.created_at);
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
+    const formattedDate = `${year}-${month}-${day}`;
+
+    console.log(formattedDate); // "2024-08-26"
+    productData.innerHTML = formattedDate;
     // Clear the productImages container
     productImages.innerHTML = "";
 
