@@ -13,7 +13,7 @@ async function renderCard() {
     );
     console.log(response.data.data);
     let filteredDAta = response.data.data.filter(
-      (item) => item.category == "Policies"
+      (item) => item.category == "Reports"
     );
     console.log("filteredDAta", filteredDAta);
 

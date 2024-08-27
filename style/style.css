@@ -9,6 +9,10 @@
 }
 .active {
   background-color: rgb(107, 145, 27);
+  color: white;
+}
+.active a {
+  color: white;
 }
 
 /*! header */
