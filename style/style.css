@@ -8,11 +8,11 @@
   margin: auto;
 }
 .active {
-  background-color: rgb(107, 145, 27);
+  background-color: rgb(107, 145, 27)!important;
   color: white;
 }
 .active a {
-  color: white;
+  color: rgb(255, 255, 255) !important;
 }
 
 /*! header */
