@@ -52,7 +52,7 @@ header #mainHeader #headerBox2 img {
   display: block; /* Ensure the image is displayed by default */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 940px) {
   .mobile-hide {
     display: none;
   }
