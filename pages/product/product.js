@@ -27,7 +27,12 @@ async function renderProductDetail() {
     // Set title and description
     productTitle.innerHTML = response.data.data.name;
     productDescription.innerHTML = response.data.data.description;
-    productlink.href = response.data.data.link;
+
+    if (response.data.data.link == "#") {
+      productlink.style.display = "none";
+    } else {
+      productlink.href = response.data.data.link;
+    }
 
     const date = new Date(response.data.data.created_at);
     const year = date.getFullYear();
