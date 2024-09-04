@@ -23,6 +23,7 @@ async function renderCard() {
               src="${item.images[0]}"
               class="card-img-top"
               alt="..."
+              style="height: 200px; object-fit: cover;"
             />
             <div class="card-body">
               <h5 class="card-title">${item.name}</h5>
