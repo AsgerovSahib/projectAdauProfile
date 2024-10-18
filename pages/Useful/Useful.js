@@ -16,22 +16,19 @@ async function renderCard() {
     );
     console.log("filteredDAta", filteredDAta);
     cardBody.innerHTML += filteredDAta.reverse().map(
-            (item) =>
-        `   <div class="card" style="width: 18rem">
-        <img
-          src="${item.images[0]}"
-          class="card-img-top"
-          alt="..."
-          style="height: 200px; object-fit: cover;"
-        />
-        <div class="card-body">
-          <h5 class="card-title">${item.name}</h5>
-          <p class="card-text">
-            ${item.description.slice(0, 60)}
+      (item) =>
+        `   <div>
+        <div>
+          <h5 class="h2"  style="color: rgb(107,145,27);"">
+          <b> ${item.name}</b>
+         </h5>
+          <p class="h3">
+            ${item.description.slice(0, 0)}
           </p>
-          <a href="../product/product.html#id=${
-            item.id
-          }" class="btn btn-success">More</a>
+             <p class="h3">
+            ${item.description}
+          </p>
+          <a href="${item.link}" class="btn btn-success">click for link</a>
         </div>
       </div>`
     );
