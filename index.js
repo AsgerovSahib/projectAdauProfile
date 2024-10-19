@@ -29,7 +29,7 @@ async function renderCard() {
           <div class="card-body">
             <h5 class="card-title">${item.name}</h5>
             <p class="card-text">
-             ${item.description.slice(0,60)}
+             ${item.description.slice(0,0)}
             </p>
             <a href="./pages/product/product.html#id=${item.id}" class="btn btn-success">More</a>
           </div>
