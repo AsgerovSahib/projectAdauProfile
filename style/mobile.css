@@ -49,6 +49,9 @@ body {
 .nav-list li a:hover {
   background-color: #ddd;
 }
+#cardBody {
+  justify-content: space-around;
+}
 
 @media (max-width: 600px) {
   .menu-toggle {
@@ -78,6 +81,9 @@ body {
   .nav-list li {
     text-align: center;
     width: 100%;
+  }
+  #cardBody {
+    justify-content: center !important;
   }
 }
 /** ---------------------------------- */
