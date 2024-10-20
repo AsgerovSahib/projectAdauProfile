@@ -19,13 +19,13 @@ async function renderCard() {
       (item) =>
         `   <div>
         <div>
-          <h5 class="h2"  style="color: rgb(107,145,27);"">
+          <h5 class="h3"  style="color: rgb(107,145,27);"">
           <b> ${item.name}</b>
          </h5>
           <p class="h3">
             ${item.description.slice(0, 0)}
           </p>
-             <p class="h3">
+             <p class="h5">
             ${item.description}
           </p>
           <a href="${item.link}" class="btn btn-success">click for link</a>
